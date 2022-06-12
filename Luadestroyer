@@ -1,0 +1,150 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+
+local w = library:CreateWindow("Lua's Gui") -- Creates the window
+
+local b = w:CreateFolder("Paid Scripts") -- Creates the folder(U will put here your buttons,etc)
+
+b:Label("Very Powerful Gui",{
+
+    TextSize = 25; -- Self Explaining
+
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+
+    
+
+})
+
+b:Button("Auto Heal",function()
+
+    while wait () do
+
+workspace.__EVENTS.Loader:FireServer()
+
+workspace.__EVENTS.Re:FireServer()
+
+workspace.__EVENTS.He:FireServer()
+
+workspace.__EVENTS.Heal:FireServer()
+
+end
+
+end)
+
+end)
+
+b:Button("Admin Sword Farm",function()
+
+    while true do
+
+		wait()game:GetService("Players").LocalPlayer.Character:FindFirstChild("Admin Sword").Handle.pr.RemoteEvent:FireServer()
+
+end
+
+b:Button("Kevon Gui",function()
+
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/SukiScripts/KevonGui/main/Kevon"), true))()
+
+--creator: Kevon
+
+--Btw This is V1.2 Join Our DIscord Server! https://discord.gg/w3mYRWuWRq
+
+end)
+
+b:Button("Regular Farm",function()
+
+    local Event = game:service'Players'.LocalPlayer.Character.sword.Handle.pr.RemoteEvent
+
+game:service'RunService'.RenderStepped:Connect(function()
+
+for i = 450,500 do
+
+Event:FireServer()
+
+end
+
+end)
+
+if Character:FindFirstChild("sword") then
+
+while wait() do
+
+Character.sword.Handle.pr.RemoteEvent:FireServer()
+
+if not Character:FindFirstChild("sword") then
+
+for _,v in pairs(Backpack:GetChildren()) do
+
+Humanoid:EquipTool(v)
+
+end
+
+end
+
+end
+
+end
+
+end)
+
+end)
+
+b:Button("Dark SS Gui",function()
+
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/SukiScripts/DarkDestroyer/main/DarkGui"), true))()
+
+--creator: Suki And Wolve
+
+--Btw This is V2 Join Our DIscord Server! https://discord.gg/w3mYRWuWRq
+
+end)
+
+b:Button("Faizan Destroyer",function()
+
+    local A_1 = game.Players.LocalPlayer.name.." Loaded Faizan's Destroyer"-----message here
+
+local A_2 = "All"
+
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+
+Event:FireServer(A_1, A_2)
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/SukiScripts/FaizansGui/main/Faizan"), true))()
+
+--creator: Alex And Faizan
+
+--Btw This is V1 Join Our DIscord Server! https://discord.gg/w3mYRWuWRq
+
+end)
+
+b:Button("Infinite Yield",function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+b:Button("Liquid Gui",function()
+
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/SukiScripts/Liquid/main/LiquidGuiFULL"), true))()
+
+--creator: Suki And Wolve Also Niko
+
+--Btw This is Wolve's New Gui! Join Our DIscord Server! https://discord.gg/w3mYRWuWRq
+
+end)
+
+b:Button("Button",function()
+
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/icuck/Sword-Simulator-GUI/master/main.lua"), true))()
+
+--creator: iHavoc101
+
+end)
+local A_1 = game.Players.LocalPlayer.name.." Loaded Lua Destroyer"-----message here
+
+local A_2 = "All"
+
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+
+Event:FireServer(A_1, A_2)
